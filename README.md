@@ -43,51 +43,66 @@ Gemini Chatbot’un mimarisi aşağıdaki bileşenlerden oluşur:
 
 ## ⚙️ Kurulum
 
-### 1️⃣ Depoyu Klonla
+### 1. Depoyu Klonla
 
-git clone https://github.com/Melikeacar/gemini-chatbot.git  
-cd gemini-chatbot  
-
----
-
-### 2️⃣ Sanal Ortam Oluştur
-
-python -m venv venv  
-
-Sanal ortamı aktifleştir:
-
-Windows:  
-venv\Scripts\activate  
-
-macOS / Linux:  
-source venv/bin/activate  
+    git clone https://github.com/Melikeacar/gemini-chatbot.git
+    cd gemini-chatbot
 
 ---
 
-### 3️⃣ Bağımlılıkları Kur
+### 2. Sanal Ortam Oluştur
 
-pip install -r requirements.txt  
-
----
-
-### 4️⃣ Ortam Değişkenlerini Ayarla
-
-Proje kök dizininde `.env` dosyası oluştur ve içine şunu ekle:
-
-GEMINI_API_KEY=your_api_key_here  
+    python -m venv venv
+    .\venv\Scripts\activate   # Windows
+    source venv/bin/activate # macOS / Linux
 
 ---
 
-### 5️⃣ Chatbot’u Çalıştır
+### 3. Bağımlılıkları Kur
 
-python main.py  
+    pip install -r requirements.txt
+
+---
+
+### 4. Ortam Değişkenlerini Ayarla
+
+Proje kök dizininde `.env` dosyası oluştur ve içine aşağıdaki satırı ekle:
+
+    GEMINI_API_KEY=your_api_key_here
+
+---
+
+### 5. Chatbot’u Çalıştır
+
+    python main.py
 
 Terminalde şu mesaj görüntülenir:
 
-Melike'nin Chatbot'a hoş geldiniz! (Çıkmak için 'exit' yazın)
+    Melike'nin Chatbot'a hoş geldiniz! (Çıkmak için 'exit' yazın)
 
+---
 
-Terminalde şu mesaj görüntülenir:
-Melike'nin Chatbot'a hoş geldiniz! (Çıkmak için 'exit' yazın)
+## 🧠 Çalışma Süreci
 
+1. **Kullanıcı**, terminal üzerinden metin girdisi sağlar  
+2. **Python uygulaması**, kullanıcı girdisini Gemini API’ye gönderir  
+3. **Gemini (gemini-2.0-flash)** modeli girdiyi işler  
+4. **AI**, anlamlı bir metin yanıtı üretir  
+5. **Chatbot**, yanıtı terminal ekranında gösterir  
+6. Süreç, kullanıcı `exit` yazana kadar devam eder  
 
+---
+
+## 📦 Kullanılan Teknolojiler
+
+### Core / Backend
+- Python  
+- Google Gemini API  
+- google-generativeai  
+
+### Ortam & Yapılandırma
+- python-dotenv  
+- Virtual Environment (venv)  
+
+### Model
+- gemini-2.0-flash  
