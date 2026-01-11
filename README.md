@@ -43,33 +43,49 @@ Gemini Chatbot’un mimarisi aşağıdaki bileşenlerden oluşur:
 
 ## ⚙️ Kurulum
 
-### 1. Depoyu Klonla
+### 1️⃣ Depoyu Klonla
 
-```bash
-git clone https://github.com/Melikeacar/gemini-chatbot.git
-cd gemini-chatbot
+git clone https://github.com/Melikeacar/gemini-chatbot.git  
+cd gemini-chatbot  
 
-### 2. Sanal Ortam Oluştur 
+---
 
-```bash
-python -m venv venv
-source venv/bin/activate    # Windows: venv\Scripts\activate
+### 2️⃣ Sanal Ortam Oluştur
 
-### 3. Bağımlılıkları Kur
+python -m venv venv  
 
-```bash
-pip install -r requirements.txt
+Sanal ortamı aktifleştir:
 
+Windows:  
+venv\Scripts\activate  
 
-### 4. Ortam Değişkenlerini Ayarla
+macOS / Linux:  
+source venv/bin/activate  
 
-```bash
-GEMINI_API_KEY=your_api_key_here
+---
 
-### 5. Chatbot’u Çalıştır
+### 3️⃣ Bağımlılıkları Kur
 
-```bash
-python main.py
+pip install -r requirements.txt  
+
+---
+
+### 4️⃣ Ortam Değişkenlerini Ayarla
+
+Proje kök dizininde `.env` dosyası oluştur ve içine şunu ekle:
+
+GEMINI_API_KEY=your_api_key_here  
+
+---
+
+### 5️⃣ Chatbot’u Çalıştır
+
+python main.py  
+
+Terminalde şu mesaj görüntülenir:
+
+Melike'nin Chatbot'a hoş geldiniz! (Çıkmak için 'exit' yazın)
+
 
 Terminalde şu mesaj görüntülenir:
 Melike'nin Chatbot'a hoş geldiniz! (Çıkmak için 'exit' yazın)
